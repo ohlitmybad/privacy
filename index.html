@@ -1,16 +1,11 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html>
-<link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
-
 <head>
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
+  <title data-i18n="privacy.title">DataMB | Privacy Policy</title>
+  <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
 
-
-  <title>DataMB | Privacy Policy</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,12 +14,6 @@
       margin: 0;
     }
 
-    h1 {
-      text-align: center;
-      font-size: 38px;
-      margin-bottom: 30px;
-      font-family: Arial, sans-serif;
-    }
 
     .privacy-policy {
       background-color: #FFFFFF;
@@ -42,354 +31,324 @@
       margin: 10px 0;
     }
 
+    .footer {
+      font-family: system-ui;
+      background: #F2F2F2;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
 
+    .footer .logo {
+      display: flex;
+      justify-content: center;
+    }
 
-.footer {
-  font-family: system-ui;
-  background: #F2F2F2;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
+    .footer .description {
+      font-size: 20px;
+      margin-bottom: 0px;
+      color: black;
+    }
 
-.footer .logo {
-  display: flex;
-  justify-content: center;
-}
+    .footer .info {
+      font-size: 16px;
+      opacity: 0.8;
+    }
 
-.footer .description {
-  font-size: 20px;
-  margin-bottom: 0px;
-color: black;
-}
+    .footer .divider {
+      border: none;
+      border-bottom: 1px solid #fff;
+      margin: 25px 0;
+      opacity: 0.2;
+    }
 
-.footer .info {
-  font-size: 16px;
-  opacity: 0.8;
-}
+    .footer .sub-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.footer .divider {
-  border: none;
-  border-bottom: 1px solid #fff;
-  margin: 25px 0;
-  opacity: 0.2;
-}
+    .footer .sub-footer .terms,
+    .footer .sub-footer .privacy,
+    .footer .sub-footer .glossary {
+      font-size: 17px;
+      margin-left: 10px;
+      text-decoration: none;
+      color: black;
+    }
 
-.footer .sub-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
 
-.footer .sub-footer .terms,
-.footer .sub-footer .privacy,
-.footer .sub-footer .glossary {
-font-size: 17px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: black;
-}
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
 
-.logo img {
-  width: 50px;
-  height: 50px;
-}
+    .google-play-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: -20px;
+    }
 
+    .google-play-container img {
+      width: 162px;
+      height: 62px;
+    }
 
+    .description,
+    .info,
+    .divider,
+    .sub-footer {
+      flex-basis: 100%;
+      color: black;
+    }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Align items at the top */
-  flex-wrap: wrap; /* Add flex-wrap property to wrap the content on smaller screens */
-}
+    .footer p {
+      margin-bottom: 0;
+    }
 
-.google-play-container {
-  display: flex;
-  flex-direction: column; /* Arrange items in a column */
-  align-items: flex-end; /* Align items to the right */
-  margin-top: -20px; /* Adjust the margin-top to remove the space */
-}
+    .header {
+      font-family: system-ui;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-.google-play-container img {
-  width: 162px;
-  height: 62px;
-}
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
 
-.description,
-.info,
-.divider,
-.sub-footer {
-  flex-basis: 100%;
-color: black;
-}
+    .header .logo img {
+      width: 46px;
+      height: 46px;
+      opacity: 0.84;
+    }
 
-.footer p {
-  margin-bottom: 0; /* Remove bottom margin from the paragraph elements */
-}
+    .header .logo-text {
+      margin-left: 10px;
+      font-size: 28px;
+      color: #444444;
+      font-weight: 600;
+    }
 
-.header {
-  font-family: system-ui;
-  background: white;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header .logo {
-  display: flex;
-  align-items: center;
-}
-
-.header .logo img {
-  width: 46px;
-  height: 46px;
-opacity: 0.84;
-}
-
-.header .logo-text {
-  margin-left: 10px;
-  font-size: 28px;
-color: #444444;
-  font-weight: 600;
-}
-
-.header .navigation {
-  display: center;
-  align-items: center;
-}
-
-.header .button {
-  margin: 0 10px;
-  padding: 0px 20px;
-  color: #444444;
-  text-decoration: none;
-  border-radius: 0px;
-font-size: 24px;
-}
-
-header a {
+    header a {
       color: black;
       text-decoration: none;
     }
 
-.header .twitter-link svg {
-  width: 25px;
-  height: 24px;
-  fill: #bcbcbc;
-}
-
-	  
+    .header text {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: 600;
+    }
 
   </style>
-
 
 
 <header class="header">
   <div class="logo">
     <a href="https://datamb.football">
         <img src="https://datamb.football/logo.png" alt="Header Logo" /></a>
-    <div class="logo-text"><a href="https://datamb.football">&nbsp;DataMB</a></div>
+    <div class="logo-text"><a href="https://datamb.football"></a></div>
   </div>
-  <nav class="navigation">
-    <a href="https://datamb.football/radars" class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="https://datamb.football/plots" class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-  </nav>
-  <a href="https://twitter.com/datamb_" target="_blank" class="twitter-link">
-    <svg width="25" height="24" fill="#bcbcbc" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  </a>
+<text data-i18n="privacy.main_title">Privacy Policy</text>
 </header>
-
 </head>
-<body>    <div class="container">
 
-
-  <h1>Privacy Policy</h1>
-
-  <div class="privacy-policy">
-
-  <h2>Collection of Personal Information from Site Visitors</h2>
-  <p>DataMB may collect or track (1) the home server domain names, e-mail addresses, type of client computer, files downloaded, search engine used, operating system, and type of Web browser of visitors to the Site, (2) the e-mail addresses of visitors that communicate with DataMB via e-mail, (3) information knowingly provided by the visitor in online forms, registration forms, surveys, e-mail, contest entries, and other online avenues (including, without limitation, demographic and personal profile data), and (4) aggregate and user-specific information regarding which pages Site visitors access.
-
-DataMB may place Internet "cookies" on visitors' hard drives. Internet cookies save data about individual visitors, such as the visitor's name, password, user-name, shopping cart, screen preferences, and the pages of the Site viewed by the visitor. When the visitor revisits the Site, DataMB may recognize the visitor by the Internet cookie and customize the visitor's experience accordingly, for example, in pre-filling forms. Additionally, DataMB uses stored user information for marketing and audience insights including demographics and geographics. Visitors may decline or remove Internet cookies, if any, by using the appropriate feature of their Web client software, if available.
-
-DataMB also may use Web bugs to gather, store, and track certain information related to your visit to and activity on the Site. A Web bug is a file object, which can be a graphic image such as a transparent one pixel-by-one pixel graphics file, which is placed on a Web page or in an e-mail message to monitor user activity. A Web bug can gather, for example, the IP address of your computer, the time the Web page was viewed, and the type of browser used.
-
-When a visitor performs a search within the Site, DataMB may record information identifying the visitor or linking the visitor to the search performed. DataMB may also record limited information for every search request and use that information to solve technical problems with the services available directly or indirectly in connection with the Site, and to calculate overall usage statistics.</p>
+<body>
+  <div class="container">
   
 
-  <h2>Use of Personal Data Collected</h2>
-  <p>Personal data collected by DataMB may be used by DataMB for many reasons, for example, for editorial and feedback purposes, for marketing and promotional purposes, for a statistical analysis of users' behavior, for product development, for content improvement, for fulfillment of a requested transaction or record-keeping, or to customize the content and layout of the Site. Aggregate data on visitors' home servers may be used for internal purposes, and individually identifying information, such as names, postal and e-mail addresses, phone numbers, and other personal information which visitors voluntarily provide to DataMB may be added to DataMB's databases and used for future calls and mailings regarding Site updates, new products and services, and upcoming events.
+    <div class="privacy-policy" data-i18n="privacy.content">
+      <h2>Collection of Personal Information from Site Visitors</h2>
+      <p>DataMB may collect or track (1) the home server domain names, e-mail addresses, type of client computer, files downloaded, search engine used, operating system, and type of Web browser of visitors to the Site, (2) the e-mail addresses of visitors that communicate with DataMB via e-mail, (3) information knowingly provided by the visitor in online forms, registration forms, surveys, e-mail, contest entries, and other online avenues (including, without limitation, demographic and personal profile data), and (4) aggregate and user-specific information regarding which pages Site visitors access.
+    
+    DataMB may place Internet "cookies" on visitors' hard drives. Internet cookies save data about individual visitors, such as the visitor's name, password, user-name, shopping cart, screen preferences, and the pages of the Site viewed by the visitor. When the visitor revisits the Site, DataMB may recognize the visitor by the Internet cookie and customize the visitor's experience accordingly, for example, in pre-filling forms. Additionally, DataMB uses stored user information for marketing and audience insights including demographics and geographics. Visitors may decline or remove Internet cookies, if any, by using the appropriate feature of their Web client software, if available.
+    
+    DataMB also may use Web bugs to gather, store, and track certain information related to your visit to and activity on the Site. A Web bug is a file object, which can be a graphic image such as a transparent one pixel-by-one pixel graphics file, which is placed on a Web page or in an e-mail message to monitor user activity. A Web bug can gather, for example, the IP address of your computer, the time the Web page was viewed, and the type of browser used.
+    
+    When a visitor performs a search within the Site, DataMB may record information identifying the visitor or linking the visitor to the search performed. DataMB may also record limited information for every search request and use that information to solve technical problems with the services available directly or indirectly in connection with the Site, and to calculate overall usage statistics.</p>
+      
+    
+      <h2>Use of Personal Data Collected</h2>
+      <p>Personal data collected by DataMB may be used by DataMB for many reasons, for example, for editorial and feedback purposes, for marketing and promotional purposes, for a statistical analysis of users' behavior, for product development, for content improvement, for fulfillment of a requested transaction or record-keeping, or to customize the content and layout of the Site. Aggregate data on visitors' home servers may be used for internal purposes, and individually identifying information, such as names, postal and e-mail addresses, phone numbers, and other personal information which visitors voluntarily provide to DataMB may be added to DataMB's databases and used for future calls and mailings regarding Site updates, new products and services, and upcoming events.
+    
+    With respect to visitor e-mail addresses, we allow users to post their e-mail address on comments or in sponsorships, in the event that they wish to allow others to reach them easily. Visitor e-mail addresses from comments are not used by DataMB to generate mailing lists.
+    
+    DataMB also may use Site visitor data to contact the Site visitors regarding account status and changes to the Terms and Conditions, any subscriber agreement, this Privacy Statement, and any other policies or agreements relevant to Site visitors.
+    
+    We will only retain your personally identifiable information as long as reasonably required to provide you with the Service unless a longer retention period is required or permitted by law (for example, for regulatory purposes).
+    
+    If you have elected to receive marketing communications from us, we retain information about your marketing preferences for a reasonable period of time from the date you last expressed interest in our content, products, or services, such as when you last opened an email from us or ceased using your HubSpot account. We retain information derived from cookies and other tracking technologies for a reasonable period of time from the date such information was created.
+    
+    Your personal information will be retained for as long as is necessary to carry out the purposes set out in this privacy policy (unless a longer retention period is required by applicable law). In general, this means that we will keep your personal data for as long as you keep your Sports Reference account. For personal data related to product purchases, we retain this longer to comply with legal obligations (such as tax and sales laws and for warranty purposes).</p>
+      
+    
+      <h2>Disclosure of Personal Data to Third Parties</h2>
+      <p>Subject to the limitations of Paragraph 4, aggregate data on visitors' home servers may be provided to third parties such as marketing firms.
+    
+    Identifiable and non-identifiable visitor information and data which visitors provide to DataMB may be provided to third parties who provide products, information, or services which DataMB believes that visitors may be interested in directly or indirectly purchasing or obtaining. Identifiable or non-identifiable data also may be disclosed or distributed to another party with which DataMB enters or reasonably may enter into a corporate transaction, such as, for example, a merger, consolidation, acquisition, or asset purchase, or to a third party pursuant to a subpoena, court order, or other form of legal process, in response to a request by or on behalf of any local, state, federal, or other government agency, department, or body, whether or not pursuant to a subpoena, court order, or other form of legal process, or if determined by DataMB in its sole judgment that such disclosure or distribution is appropriate to protect the life, health, security, or property of DataMB or any other person or entity.
+    
+    While DataMB will undertake efforts to see that any third party to which DataMB shares, rents, sells, or otherwise discloses personal data is under a contractual obligation to use the personal data solely for the purposes for which the data was disclosed, such third parties are independent third parties over which DataMB exercises no control, and DataMB is not responsible for their conduct, actions, omissions, or information handling or dissemination practices and DataMB will not be liable therefor.
+    
+    This Site may contain links to other World Wide Web sites or advertisements for or placed by third parties. DataMB is not responsible for the privacy practices of such Web sites, advertisers, or third parties, or for the content of such sites or advertisements. It is possible that these links or advertisements, themselves, may be used by third parties or others to collect personal or other information about Site visitors. It is solely the visitor's obligation to review and understand the privacy practices and policies of these other Web sites and of these advertisers and third parties.
+    
+    </p>
+    
+      <h2>Opt-Out Right</h2>
+      <p>Except as necessary for DataMB to provide the services, information, or products requested by a visitor, the visitor may opt out of having his or her personally identifiable information, which has been voluntarily provided to DataMB through an account registration, customer order, or electronic news or information subscription, prospectively retained by DataMB, used by DataMB for secondary purposes, or disclosed by DataMB to third parties by contacting DataMB via postal mail, e-mail, or facsimile at the addresses set out above. (This does not apply to collection of the type of Web browser of the visitor to the Site or to information provided or collected that does not meet the above description.) By way of illustration, you have the option to remove your name from any of our mailing lists at any time.</p>
+    
+      <h2>Access to and Ability to Correct Personal Data</h2>
+      <p>Upon a visitor's request via postal mail, e-mail, or facsimile, DataMB will provide to the visitor a summary of any personally identifiable information retained by DataMB regarding the visitor, which information has been voluntarily provided to DataMB through an account registration, customer order, or electronic news or information subscription. A visitor may modify, correct, change or update their personally identifiable information by contacting DataMB via postal mail, e-mail, facsimile, or telephone as provided in Paragraph 3 of this Privacy Statement.</p>
+    
+      <h2>Right to Change Privacy Statement</h2>
+      <p>DataMB may change this Privacy Statement at any time. Notice of any new or revised Privacy Statement, as well as the location of the new or revised statement, will be posted on the Site for at least 60 days after the change. It is the obligation of users visiting the Site to learn of changes to the Privacy Statement since their last visit. Any change to this Privacy Statement shall be effective as to all visitors once instituted, including as to any visitor who previously visited the Site before the change was made.</p>
+    
+    <h2>Advertisement</h2>
+      <p>At DataMB, accessible from datamb.football, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by DataMB and how we use it.
+    <br>
+    <br>
+    This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in DataMB. This policy is not applicable to any information collected offline or via channels other than this website.
+    <br>
+    <br>
+    Consent
+    By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+    <br>
+    <br>
+    Information we collect
+    The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
+    <br>
+    <br>
+    If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+    <br>
+    <br>
+    When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
+    <br>
+    <br>
+    How we use your information
+    We use the information we collect in various ways, including to:
+    <br>
+    <br>
+    Provide, operate, and maintain our website
+    Improve, personalize, and expand our website
+    Understand and analyze how you use our website
+    Develop new products, services, features, and functionality
+    Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes
+    Send you emails
+    Find and prevent fraud
+    Log Files
+    DataMB follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+    <br>
+    <br>
+    Google DoubleClick DART Cookie
+    Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – https://policies.google.com/technologies/ads
+    <br>
+    <br>
+    Our Advertising Partners
+    <br>
+    <br>
+    Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.
+    <br>
+    <br>
+    Google
+    <br>
+    <br>
+    https://policies.google.com/technologies/ads
+    <br>
+    <br>
+    Advertising Partners Privacy Policies
+    You may consult this list to find the Privacy Policy for each of the advertising partners of DataMB.
+    <br>
+    <br>
+    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on DataMB, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+    <br>
+    <br>
+    Note that DataMB has no access to or control over these cookies that are used by third-party advertisers.
+    <br>
+    <br>
+    Third Party Privacy Policies
+    DataMB's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+    <br>
+    <br>
+    You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+    <br>
+    <br>
+    CCPA Privacy Rights (Do Not Sell My Personal Information)
+    Under the CCPA, among other rights, California consumers have the right to:
+    <br>
+    <br>
+    Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
+    <br>
+    <br>
+    Request that a business delete any personal data about the consumer that a business has collected.
+    <br>
+    <br>
+    Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
+    <br>
+    <br>
+    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+    <br>
+    <br>
+    GDPR Data Protection Rights
+    We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
+    <br>
+    <br>
+    The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.
+    <br>
+    <br>
+    The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+    <br>
+    <br>
+    The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
+    <br>
+    <br>
+    The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
+    <br>
+    <br>
+    The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
+    <br>
+    <br>
+    The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+    <br>
+    <br>
+    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+    <br>
+    <br>
+    Children's Information
+    Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+    <br>
+    <br>
+    DataMB does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+    <br>
+    <br>
+    Changes to This Privacy Policy
+    We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
+    <br>
+    <br>
+    If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p></div>
 
-With respect to visitor e-mail addresses, we allow users to post their e-mail address on comments or in sponsorships, in the event that they wish to allow others to reach them easily. Visitor e-mail addresses from comments are not used by DataMB to generate mailing lists.
-
-DataMB also may use Site visitor data to contact the Site visitors regarding account status and changes to the Terms and Conditions, any subscriber agreement, this Privacy Statement, and any other policies or agreements relevant to Site visitors.
-
-We will only retain your personally identifiable information as long as reasonably required to provide you with the Service unless a longer retention period is required or permitted by law (for example, for regulatory purposes).
-
-If you have elected to receive marketing communications from us, we retain information about your marketing preferences for a reasonable period of time from the date you last expressed interest in our content, products, or services, such as when you last opened an email from us or ceased using your HubSpot account. We retain information derived from cookies and other tracking technologies for a reasonable period of time from the date such information was created.
-
-Your personal information will be retained for as long as is necessary to carry out the purposes set out in this privacy policy (unless a longer retention period is required by applicable law). In general, this means that we will keep your personal data for as long as you keep your Sports Reference account. For personal data related to product purchases, we retain this longer to comply with legal obligations (such as tax and sales laws and for warranty purposes).</p>
-  
-
-  <h2>Disclosure of Personal Data to Third Parties</h2>
-  <p>Subject to the limitations of Paragraph 4, aggregate data on visitors' home servers may be provided to third parties such as marketing firms.
-
-Identifiable and non-identifiable visitor information and data which visitors provide to DataMB may be provided to third parties who provide products, information, or services which DataMB believes that visitors may be interested in directly or indirectly purchasing or obtaining. Identifiable or non-identifiable data also may be disclosed or distributed to another party with which DataMB enters or reasonably may enter into a corporate transaction, such as, for example, a merger, consolidation, acquisition, or asset purchase, or to a third party pursuant to a subpoena, court order, or other form of legal process, in response to a request by or on behalf of any local, state, federal, or other government agency, department, or body, whether or not pursuant to a subpoena, court order, or other form of legal process, or if determined by DataMB in its sole judgment that such disclosure or distribution is appropriate to protect the life, health, security, or property of DataMB or any other person or entity.
-
-While DataMB will undertake efforts to see that any third party to which DataMB shares, rents, sells, or otherwise discloses personal data is under a contractual obligation to use the personal data solely for the purposes for which the data was disclosed, such third parties are independent third parties over which DataMB exercises no control, and DataMB is not responsible for their conduct, actions, omissions, or information handling or dissemination practices and DataMB will not be liable therefor.
-
-This Site may contain links to other World Wide Web sites or advertisements for or placed by third parties. DataMB is not responsible for the privacy practices of such Web sites, advertisers, or third parties, or for the content of such sites or advertisements. It is possible that these links or advertisements, themselves, may be used by third parties or others to collect personal or other information about Site visitors. It is solely the visitor's obligation to review and understand the privacy practices and policies of these other Web sites and of these advertisers and third parties.
-
-</p>
-
-  <h2>Opt-Out Right</h2>
-  <p>Except as necessary for DataMB to provide the services, information, or products requested by a visitor, the visitor may opt out of having his or her personally identifiable information, which has been voluntarily provided to DataMB through an account registration, customer order, or electronic news or information subscription, prospectively retained by DataMB, used by DataMB for secondary purposes, or disclosed by DataMB to third parties by contacting DataMB via postal mail, e-mail, or facsimile at the addresses set out above. (This does not apply to collection of the type of Web browser of the visitor to the Site or to information provided or collected that does not meet the above description.) By way of illustration, you have the option to remove your name from any of our mailing lists at any time.</p>
-
-  <h2>Access to and Ability to Correct Personal Data</h2>
-  <p>Upon a visitor's request via postal mail, e-mail, or facsimile, DataMB will provide to the visitor a summary of any personally identifiable information retained by DataMB regarding the visitor, which information has been voluntarily provided to DataMB through an account registration, customer order, or electronic news or information subscription. A visitor may modify, correct, change or update their personally identifiable information by contacting DataMB via postal mail, e-mail, facsimile, or telephone as provided in Paragraph 3 of this Privacy Statement.</p>
-
-  <h2>Right to Change Privacy Statement</h2>
-  <p>DataMB may change this Privacy Statement at any time. Notice of any new or revised Privacy Statement, as well as the location of the new or revised statement, will be posted on the Site for at least 60 days after the change. It is the obligation of users visiting the Site to learn of changes to the Privacy Statement since their last visit. Any change to this Privacy Statement shall be effective as to all visitors once instituted, including as to any visitor who previously visited the Site before the change was made.</p>
-
-<h2>Advertisement</h2>
-	<p>At DataMB, accessible from datamb.football, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by DataMB and how we use it.
-<br>
-<br>
-This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in DataMB. This policy is not applicable to any information collected offline or via channels other than this website.
-<br>
-<br>
-Consent
-By using our website, you hereby consent to our Privacy Policy and agree to its terms.
-<br>
-<br>
-Information we collect
-The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
-<br>
-<br>
-If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
-<br>
-<br>
-When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
-<br>
-<br>
-How we use your information
-We use the information we collect in various ways, including to:
-<br>
-<br>
-Provide, operate, and maintain our website
-Improve, personalize, and expand our website
-Understand and analyze how you use our website
-Develop new products, services, features, and functionality
-Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes
-Send you emails
-Find and prevent fraud
-Log Files
-DataMB follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
-<br>
-<br>
-Google DoubleClick DART Cookie
-Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – https://policies.google.com/technologies/ads
-<br>
-<br>
-Our Advertising Partners
-<br>
-<br>
-Some of advertisers on our site may use cookies and web beacons. Our advertising partners are listed below. Each of our advertising partners has their own Privacy Policy for their policies on user data. For easier access, we hyperlinked to their Privacy Policies below.
-<br>
-<br>
-Google
-<br>
-<br>
-https://policies.google.com/technologies/ads
-<br>
-<br>
-Advertising Partners Privacy Policies
-You may consult this list to find the Privacy Policy for each of the advertising partners of DataMB.
-<br>
-<br>
-Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on DataMB, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
-<br>
-<br>
-Note that DataMB has no access to or control over these cookies that are used by third-party advertisers.
-<br>
-<br>
-Third Party Privacy Policies
-DataMB's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
-<br>
-<br>
-You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
-<br>
-<br>
-CCPA Privacy Rights (Do Not Sell My Personal Information)
-Under the CCPA, among other rights, California consumers have the right to:
-<br>
-<br>
-Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
-<br>
-<br>
-Request that a business delete any personal data about the consumer that a business has collected.
-<br>
-<br>
-Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
-<br>
-<br>
-If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
-<br>
-<br>
-GDPR Data Protection Rights
-We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
-<br>
-<br>
-The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.
-<br>
-<br>
-The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
-<br>
-<br>
-The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
-<br>
-<br>
-The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
-<br>
-<br>
-The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
-<br>
-<br>
-The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
-<br>
-<br>
-If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
-<br>
-<br>
-Children's Information
-Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
-<br>
-<br>
-DataMB does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
-<br>
-<br>
-Changes to This Privacy Policy
-We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
-<br>
-<br>
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p></div>
-
- <footer class="footer">
+  <footer class="footer">
     <div class="logo">
-      <img src="https://datamb.football/logo.png" alt="Footer Logo" />
+      <img src="https://datamb.football/logo.png" alt="Footer Logo"/>
     </div>
     <p class="description">DataMB</p>
-    <p class="info">© All Rights Reserved</p>
+    <p class="info" data-i18n="footer.rights">© All Rights Reserved</p>
     <hr class="divider" />
     <div class="sub-footer">
       <nav>
-        <a class="terms" href="https://datamb.football/guide#contact">Contact</a>
+        <a class="terms" href="https://datamb.football/guide#contact" data-i18n="footer.contact">Contact</a>
       </nav>
       <nav>
         <a target="_blank" href="https://twitter.com/datamb_">
@@ -400,7 +359,64 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
       </nav>
     </div>
   </footer>
- 
-</body>
 
+  <script>
+    // Translation functionality
+    function setLanguage(language) {
+      localStorage.setItem('preferredLanguage', language);
+      // Update URL with language parameter
+      const url = new URL(window.location.href);
+      if (language === 'en') {
+        url.searchParams.delete('lang');
+      } else {
+        url.searchParams.set('lang', language);
+      }
+      window.history.pushState({}, '', url);
+      applyLanguage(language);
+    }
+    
+    function getPreferredLanguage() {
+      // Check URL parameter first
+      const urlParams = new URLSearchParams(window.location.search);
+      const langParam = urlParams.get('lang');
+      if (langParam) {
+        return langParam;
+      }
+      return localStorage.getItem('preferredLanguage') || getBrowserLanguage() || 'en';
+    }
+    
+    function getBrowserLanguage() {
+      return navigator.language.slice(0, 2);
+    }
+    
+    function applyLanguage(language) {
+    fetch(`locales/${language}.json`)
+      .then(response => response.json())
+  .then(translations => {
+document.querySelectorAll('[data-i18n]').forEach(element => {
+    const keys = element.getAttribute('data-i18n').split('.');
+    let value = translations;
+    for (const key of keys) {
+        value = value[key];
+    }
+    if (value) {
+        if (element.tagName === 'META') {
+            element.setAttribute('content', value);
+        } else if (value.includes('<')) {
+            // If the translation contains HTML
+            element.innerHTML = value;
+        } else {
+            element.textContent = value;
+        }
+    }
+});
+});
+}
+    
+    // Initialize translations
+    const preferredLanguage = getPreferredLanguage();
+    applyLanguage(preferredLanguage);
+    
+    </script>
+</body>
 </html>
