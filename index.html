@@ -361,62 +361,70 @@
   </footer>
 
   <script>
-    // Translation functionality
-    function setLanguage(language) {
-      localStorage.setItem('preferredLanguage', language);
-      // Update URL with language parameter
-      const url = new URL(window.location.href);
-      if (language === 'en') {
-        url.searchParams.delete('lang');
-      } else {
-        url.searchParams.set('lang', language);
-      }
-      window.history.pushState({}, '', url);
-      applyLanguage(language);
+
+  
+  function getPreferredLanguage() {
+    // PRIORITY 1: Check URL parameter first
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam) {
+      return langParam;
     }
-    
-    function getPreferredLanguage() {
-      // Check URL parameter first
-      const urlParams = new URLSearchParams(window.location.search);
-      const langParam = urlParams.get('lang');
-      if (langParam) {
-        return langParam;
-      }
-      return localStorage.getItem('preferredLanguage') || getBrowserLanguage() || 'en';
+    // PRIORITY 2: Check localStorage
+    const storedLang = localStorage.getItem('preferredLanguage');
+    if (storedLang) {
+      return storedLang;
     }
-    
-    function getBrowserLanguage() {
-      return navigator.language.slice(0, 2);
+    // PRIORITY 3: Use browser language
+    return getBrowserLanguage() || 'en';
+  }
+
+  function getBrowserLanguage() {
+    return navigator.language.slice(0, 2);
+  }
+
+  function applyLanguage(language) {
+    console.log(language);
+
+    if (language === 'en') {
+      return;
     }
+
     
-    function applyLanguage(language) {
     fetch(`locales/${language}.json`)
-      .then(response => response.json())
-  .then(translations => {
-document.querySelectorAll('[data-i18n]').forEach(element => {
-    const keys = element.getAttribute('data-i18n').split('.');
-    let value = translations;
-    for (const key of keys) {
-        value = value[key];
-    }
-    if (value) {
-        if (element.tagName === 'META') {
-            element.setAttribute('content', value);
-        } else if (value.includes('<')) {
-            // If the translation contains HTML
-            element.innerHTML = value;
-        } else {
-            element.textContent = value;
+      .then(response => {
+        // Don't throw an error, just return null if response is not OK
+        return response.ok ? response.json() : null;
+      })
+      .then(translations => {
+        // Only proceed if translations exist
+        if (translations) {
+          document.querySelectorAll('[data-i18n]').forEach(element => {
+            const keys = element.getAttribute('data-i18n').split('.');
+            let value = translations;
+            for (const key of keys) {
+              if (value === undefined || value === null) break;
+              value = value[key];
+            }
+            if (value) {
+              if (element.tagName === 'META') {
+              element.setAttribute('content', value);
+          } else if (value.includes('<')) {
+              element.innerHTML = value;
+          } else {
+              element.textContent = value;
+          }          }
+          });
         }
-    }
-});
-});
-}
-    
-    // Initialize translations
-    const preferredLanguage = getPreferredLanguage();
-    applyLanguage(preferredLanguage);
-    
+      })
+      .catch(() => {
+        // Completely empty catch block to silently ignore any errors
+      });
+  }
+  
+  const preferredLanguage = getPreferredLanguage();
+  applyLanguage(preferredLanguage);
+  
     </script>
 </body>
 </html>
